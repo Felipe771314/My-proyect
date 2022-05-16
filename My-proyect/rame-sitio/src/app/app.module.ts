@@ -13,8 +13,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { WorksComponent } from './pages/works/works.component';
-import { HomeRoutingModule } from './pages/home/home-routing.module';
-import { HomeComponent } from './pages/home/home.component';
+
 
 
 @NgModule({
