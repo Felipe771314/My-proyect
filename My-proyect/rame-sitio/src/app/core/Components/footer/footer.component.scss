@@ -1,0 +1,17 @@
+.links{
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+}
+.text-white {
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  margin-top: 3%;
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+  .links{
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+}
+}
+

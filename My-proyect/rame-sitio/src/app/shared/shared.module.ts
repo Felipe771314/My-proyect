@@ -5,6 +5,10 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { PoryectComponent } from './components/poryect/poryect.component';
+import { MaterialModule } from './material/material.module';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 @NgModule({
   declarations: [
@@ -14,10 +18,12 @@ import { PoryectComponent } from './components/poryect/poryect.component';
     BannerComponent,
     PoryectComponent,
 
-
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+    SlickCarouselModule,
+    CarouselModule
   ],
   exports: [
     ServiceComponent,

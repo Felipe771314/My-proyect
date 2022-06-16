@@ -13,8 +13,10 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { WorksComponent } from './pages/works/works.component';
-import { HomeRoutingModule } from './pages/home/home-routing.module';
-import { HomeComponent } from './pages/home/home.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomeModule } from './pages/home/home.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -28,15 +30,22 @@ import { HomeComponent } from './pages/home/home.component';
     MarketingComponent,
     DisenioComponent,
     WorksComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    HomeModule,
+    CarouselModule,
+    BrowserAnimationsModule
+
+
   ],
-  providers: [SharedModule],
+  providers: [SharedModule, CoreModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

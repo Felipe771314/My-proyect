@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { WorksComponent } from './pages/works/works.component';
 
 
 const routes: Routes = [
+  {path:'Works', component:WorksComponent},
   {
     path: '',
     loadChildren: () =>
-      import('./pages/home/home.component').then(
-        (m) => m.HomeComponent
-      ),
+      import('./pages/home/home.module').then((m) => m.HomeModule),
   },
 ]
 

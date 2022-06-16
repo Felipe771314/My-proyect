@@ -1,3 +1,29 @@
+
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: papayawhip;
+  margin: 0 auto;
+  font-family: 'Mulish';
+}
+
+
+
+body .slick-prev,
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  background: grey !important;
+  z-index: 100;
+}
+.slick-prev{
+left: 0px !important;
+}
+.slick-next {
+  right: 0px !important;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("./assets/css/fonts/Montserrat-Black.ttf");
@@ -533,6 +559,8 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 30px;
+
 }
 @media (max-width: 1180px) {
   .intro {
@@ -620,12 +648,12 @@ body {
 .intro--options > a {
   max-width: 250px;
   text-decoration: none;
-  color: #282828;
+  color: #c4c3c3;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 .intro--options > a:hover {
-  color: #fff;
+  color: rgb(255, 251, 251);
 }
 .intro--options h3 {
   font-size: 16px;
