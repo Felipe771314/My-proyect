@@ -30,8 +30,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MarketingComponent,
     DisenioComponent,
     WorksComponent,
-
-
   ],
   imports: [
     BrowserModule,
