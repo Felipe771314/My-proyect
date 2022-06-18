@@ -1,0 +1,36 @@
+<ngx-slick-carousel
+  class="carousel"
+  #slickModal="slick-carousel"
+  [config]="slide"
+  style="width: 70%"
+>
+  <div ngxSlickItem class="slide" *ngFor="let card of cards">
+  <div class="">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
+        <h2 class="text-2xl font-extrabold text-gray-100">{{card.title}}</h2>
+        <div class="group relative">
+          <div
+            class=""
+          >
+            <img
+              src="{{card.img}}"
+              alt="Collection of four insulated travel bottles on wooden shelf."
+              class="w-full h-full object-center object-cover"
+            />
+          </div>
+          <h3 class="mt-6 text-sm text-gray-500">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              {{card.title}}
+            </a>
+          </h3>
+          <p class="text-base font-semibold text-gray-900">
+            Daily commute essentials
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</ngx-slick-carousel>

@@ -1,0 +1,25 @@
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+// BASE
+@import '../src/assets/css/base/fonts';
+@import '../src/assets/css/base/normalize';
+@import '../src/assets/css/base/vars';
+@import '../src/assets/css/base/selection-colors';
+@import '../src/assets/css/base/body-element';
+
+
+// LAYOUTS
+@import '../src/assets/css/layouts/_grid.sass';
+
+
+// MODULES
+@import '../src/assets/css/modules/_device-notification.sass';
+@import '../src/assets/css/modules/_section.sass';
+@import '../../assets/css/modules/_header.sass';
+@import '../../assets/css/modules/_side-nav.sass';
+@import '../../assets/css/modules/_intro.sass';
+@import '../../assets/css/modules/work';
+@import '../../assets/css/modules/about';
+@import '../../assets/css/modules/contact';
+@import '../../assets/css/modules/hire';
+@import '../../assets/css/modules/outer-nav';

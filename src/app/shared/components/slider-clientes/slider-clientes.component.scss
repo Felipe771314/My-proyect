@@ -1,0 +1,104 @@
+.slide {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  flex-wrap: wrap;
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #4e4e4e;
+      width: min(250px, 100%) !important;
+      height: min(250px, 100%) !important;
+      gap: 1rem;
+      margin-top: auto;
+      margin-bottom: auto;
+
+
+      .bubble {
+        padding: 1.5rem;
+        background-color: #0000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 1.5rem;
+
+        .title {
+          font-weight: bold;
+          margin-bottom: 1rem;
+          text-align: center !important;
+        }
+
+        .body {
+          font: 0.9rem/130% "Mulish",sans-serif;
+          text-align: center;
+
+          line-height: 1.7;
+        }
+      }
+
+      .spacing {
+        height: 150px;
+      }
+    }
+  }
+
+  .slide {
+    padding-top: 2rem;
+    max-width: 250px;
+    display: block;
+  }
+
+  :host::ng-deep .slick-track {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+
+  .slick-slide {
+
+
+    .text {
+      opacity: 0;
+      transition: 0.7s;
+    }
+  }
+
+  .slick-active {
+    transform: scale(1.04) translateY(3%);
+    transition: 1s;
+
+    .text {
+      opacity: 1;
+      transition: 0.7s;
+      width: min(180px, 100%);
+    }
+  }
+
+  .carousel {
+    justify-content: center !important;
+    margin: auto;
+    justify-items: center;
+    overflow: hidden;
+    width: min-content;
+    height: fit-content;
+  }
+
+  @media screen and (min-width: 992px) {
+
+    .section-title {
+      font-size: 1.875rem;
+    }
+  }
+

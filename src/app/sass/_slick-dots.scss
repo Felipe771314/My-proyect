@@ -1,0 +1,23 @@
+.slick-dots{
+  top: 85%;
+
+  li button {
+      background: url(../../assets/slider-controls/Ellipse-3.svg) no-repeat !important;
+      background-position: 50% 50% !important;
+
+      text-indent: -9999px;
+      overflow:hidden;
+  }
+
+  .slick-active button {
+      background: url(../../assets/slider-controls/Ellipse-2-actie.svg) no-repeat !important;
+      background-position: 50% 50% !important;
+  }
+
+}
+
+@media screen and (min-width: 575px) {
+  .slick-dots{
+      top: 80%;
+  }
+}
